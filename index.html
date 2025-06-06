@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодное приложение</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Погодное приложение</h1>
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Введите город...">
+            <button id="search-btn">Поиск</button>
+        </div>
+        <div class="weather-info hidden">
+            <h2 id="city-name"></h2>
+            <div class="weather-main">
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <span id="temperature"></span>
+            </div>
+            <div class="weather-details">
+                <p>Влажность: <span id="humidity"></span>%</p>
+                <p>Ветер: <span id="wind-speed"></span> м/с</p>
+                <p id="weather-description"></p>
+            </div>
+        </div>
+        <div id="error-message" class="hidden"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
